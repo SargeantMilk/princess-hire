@@ -1,0 +1,214 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F5F6F7;
+    color: #7C4562;
+    font-family: Mulish;
+    font-size: 16px;
+}
+
+/* Header */
+
+header{
+    display: flex;
+    position: fixed;
+    background-color: #7C4562;
+    color:#F0F1F2;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    padding: 0 1.25rem;
+    width: 100%;
+}
+
+h1, h2{
+    font-family:Righteous;
+}
+h2{
+    font-weight: 400;
+}
+
+
+menu{
+    list-style: none;
+}
+
+menu li{
+    display: inline;
+}
+
+menu a{
+    padding: .35rem .75rem;
+    text-decoration: none;
+    color: #F0F1F2;
+    border-radius: 0.5rem;
+}
+menu a:hover{
+    background-color: #F1709Bcc;
+    box-shadow: 0px 0px 10px #F1709Bcc;
+}
+menu a:active{
+    background-color: #F1709B33;
+    box-shadow: 0px 0px 10px #F1709B33;
+    color: #CEC1B2;
+}
+
+main{
+    padding-top: 5rem;
+}
+
+.banner{
+    display: flex;
+    background: center / cover no-repeat url("../media/images/bannerimg.jpg");
+    align-items: center;
+    text-align: center;
+    height: 19rem;
+    width:100%;
+}
+
+.banner h3{
+    color:#7C4562;
+    width: 100%;
+    padding: 2rem;
+    background-color: #FFFF95cc;
+    font-family:Mulish;
+}
+.banner h3 span{
+    font-family:Meddon;
+}
+
+section{
+    display: flex;
+    background-color: #F0F1F2;
+    margin: 1.25rem auto;
+    padding: 1.35rem;
+    width: 80%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+section h2{
+    text-align: center;
+    padding-bottom: 1.35rem;
+    width: 100%;
+}
+
+/* Princess cards */
+
+#best-sellers .container{
+    min-height: 450px;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height:fit-content;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+}
+
+#best-sellers .card{
+    justify-content: end;
+    height: 450px;
+}
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background: center/ cover no-repeat;
+    width: 30%;
+    min-width: 200px;
+}
+
+#best-sellers .card:hover div{
+    display: flex;
+}
+
+.card div{
+    display: none;
+    height: fit-content;
+    background-color: #FFFF95cc;
+    padding: 5%;
+    color: #7C4562;
+}
+
+#elsa{
+    grid-area: elsa;
+    background-image: url(../media/images/elsa.jpg);
+}
+#moana{
+    grid-area: moana;
+    background-image: url(../media/images/moana.png);
+}
+#ariel{
+    grid-area: ariel;
+    background-image: url(../media/images/ariel.jpg);
+}
+
+/* Booking */
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    width: 100%;
+}
+input, select, textarea{
+    border: 1px solid #7C4562;
+    color:#7C4562;
+    border-radius: .25rem;
+}
+input, select{
+    width: 30%;
+    padding: .5rem 1rem;
+    margin:0;
+}
+
+button{
+    background-color: #F1709B;
+    color: #fff;
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: .25rem;
+    width: 10rem;
+}
+
+/* Price list */
+
+#pricelist .grid{
+    grid-template:
+    "expensive mid cheap" 1fr/ 1fr 1fr 1fr;
+}
+
+#pricelist .card, #pricelist ul{
+    padding: 5%;
+}
+
+
+.card#expensive{
+    grid-area: expensive;
+    background-color: #7C4562;
+    color: #F0F1F2;
+}
+.card#mid{
+    grid-area: mid;
+    background-color: #F1709B;
+    color: #F0F1F2;
+}
+.card#cheap{
+    grid-area: cheap;
+    background-color: #FFFF95;
+}
+
+/* Footer */
+
+footer{
+    background-color: #CEC1B2;
+    padding: 2rem;
+}

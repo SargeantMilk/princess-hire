@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="shortcut icon" href="resources/media/favicon.ico" type="images/x-icon">
+    <link rel="stylesheet" href="resources/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Meddon&family=Mulish:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Righteous&display=swap" rel="stylesheet">
+    <title>Magic4hire</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Magic4hire</h1>
+      <nav>
+        <menu>
+          <li><a href="#best-sellers">Our best-sellers</a></li>
+          <li><a href="#booking">Book with us</a></li>
+          <li><a href="#pricelist">Our prices</a></li>
+        </menu>
+      </nav>
+    </header>
+    <main>
+      <div class="banner">
+        <h3>Make a special day <span>magical</span> with one of our princesses</h3>
+      </div>
+      <section id="best-sellers">
+        <h2>Our best-sellers</h2>
+        <div class="container">
+          <div class="card" id="elsa">
+            <div>Hire a famous ice-queen for your child's birthday party. She pairs well with an ice-cream cake!</div>
+          </div>
+          <div class="card" id="moana">
+            <div>Hire the chief's daughter and see how far we'll go to make your party memorable!</div>
+          </div>
+          <div class="card" id="ariel">
+            <div>Give a mermaid legs and she's sure to make a splash for your special day!</div>
+          </div>
+        </div>
+      </section>
+      <section id="booking">
+        <h2>Book with us</h2>
+        <form action="submit_booking.php" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="date">Event Date:</label>
+            <input type="date" id="date" name="date" required><br>
+            <label for="princess">Princess to Hire:</label>
+            <select id="princess" name="princess" required>
+              <option value="elsa">Elsa</option>
+              <option value="moana">Moana</option>
+              <option value="ariel">Ariel</option>
+              <option value="cinderella">Cinderella</option>
+              <option value="sleeping-beauty">Sleeping Beauty</option>
+            </select><br>
+          </div>
+
+          <label for="message">Additional Message:</label><br>
+          <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+      
+          <button type="submit">Submit Booking</button>
+        </form>
+      </section>      
+      <section id="pricelist">
+        <h2>Our prices</h2>
+        <div class="container">
+          <div class="card" id="expensive">
+            <h2>Platinum package</h2>
+            <ul>
+              <li>3 hours</li>
+              <li>Magic tricks included</li>
+              <li>Custom birthday card</li>
+              <li>10 photo package</li>
+            </ul>
+            £110
+          </div>
+          <div class="card" id="mid">
+            <h2>Gold Package</h2>
+            <ul>
+              <li>2 hours</li>
+              <li>Magic tricks included</li>
+              <li>Custom birthday card</li>
+              <li>5 photo package</li>
+            </ul>
+            £85
+          </div>
+          <div class="card" id="cheap">
+            <h2>Silver Package</h2>
+            <ul>
+              <li>1.5 hours</li>
+              <li>Custom birthday card</li>
+              <li>2 photo package (one group, one individual)</li>
+            </ul>
+            £50
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      &#169; Magic4hire
+    </footer>
+  </body>
+</html>
